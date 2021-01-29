@@ -83,7 +83,7 @@ function websdkready() {
     document.getElementById("meeting_pwd").value = "";
     document.getElementById("meeting_lang").value = "en-US";
     document.getElementById("meeting_role").value = 0;
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
   });
 
   // click join meeting button
@@ -110,7 +110,7 @@ function websdkready() {
           console.log(res.result);
           meetingConfig.signature = res.result;
           meetingConfig.apiKey = API_KEY;
-          var joinUrl = "./zoom-call/cdn/meeting.html?" + testTool.serialize(meetingConfig);
+          var joinUrl = "./meeting.html?" + testTool.serialize(meetingConfig);
           console.log(joinUrl);
           window.open(joinUrl, "_blank");
         },
