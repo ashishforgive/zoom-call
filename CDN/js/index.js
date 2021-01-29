@@ -142,7 +142,7 @@ function websdkready() {
         console.log(res.result);
         meetingConfig.signature = res.result;
         meetingConfig.apiKey = API_KEY;
-        var joinUrl ="http://3.138.33.138/zoom-call/cdn/meeting.html?" +
+        var joinUrl ="http://3.138.33.138/zoom-call/CDN/meeting.html?" +
           testTool.serialize(meetingConfig);
         document.getElementById('copy_link_value').setAttribute('link', joinUrl);
         copyToClipboard('copy_link_value');
